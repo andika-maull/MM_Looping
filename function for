@@ -1,39 +1,9 @@
 function setup() {
   createCanvas(800, 600);
-  noLoop(); // Agar gambar hanya dibuat sekali dan tidak diulang
+  noLoop();
 }
 
 function draw() {
   background(220);
   
-  let smileSize = 50;    // Ukuran ikon smile
-  let spacing = 100;     // Jarak antara setiap ikon smile
-
-  // Menggunakan perulangan `for` untuk membuat pola smile dalam beberapa baris dan kolom
-  for (let x = 50; x < width; x += spacing) {
-    for (let y = 50; y < height; y += spacing) {
-      drawSmile(x, y, smileSize);
-    }
-  }
-}
-
-// Fungsi untuk menggambar ikon smile (wajah tersenyum)
-function drawSmile(x, y, size) {
-  // Wajah (lingkaran kuning)
-  fill(255, 223, 0); // Warna kuning
-  noStroke();
-  ellipse(x, y, size, size);
-
-  // Mata kiri
-  fill(0); // Warna hitam untuk mata
-  ellipse(x - size / 5, y - size / 5, size / 8, size / 8);
-  
-  // Mata kanan
-  ellipse(x + size / 5, y - size / 5, size / 8, size / 8);
-
-  // Mulut (lengkungan tersenyum)
-  noFill();
-  stroke(0);
-  strokeWeight(2);
-  arc(x, y + size / 10, size / 2, size / 2, 0, PI);
 }
