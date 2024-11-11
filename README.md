@@ -10,8 +10,6 @@
 | Mata Kuliah | *Grafika Komputer*
 
 # SCREENSHOT PROGRAM
-<# SCREENSHOT PROGRAM
-<img width="403" alt="image" src="https://github.com/user-attachments/assets/b84da53e-9037-44f3-971f-671078b927fb">
->
+<img width="197" alt="Screenshot 2024-11-11 142137" src="https://github.com/user-attachments/assets/f82f8c9d-2804-4ffd-a427-ecb890ab229a">
 
 |Grafika Komputer|
