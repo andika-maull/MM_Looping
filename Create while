@@ -1,0 +1,26 @@
+function setup() {
+  createCanvas(800, 600);
+  noLoop();
+}
+
+function draw() {
+  
+  // Menggunakan perulangan while untuk membuat pola kotak berlapis
+  let size = 400;
+  let colorShift = 0;
+  
+  while (size > 0) {
+    
+    // Menggunakan nilai RGB untuk membuat variasi warna
+    fill(250 - colorShift, 100 + colorShift, 150 + colorShift); 
+    rectMode(CENTER);
+    noStroke();
+    rect(width / 2, height / 2, size, size);
+
+    // Mengurangi ukuran kotak pada setiap lapisan
+    size -= 50;        
+
+    // Menambah variasi warna
+    colorShift += 20; 
+  }
+}
